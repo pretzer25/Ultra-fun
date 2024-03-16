@@ -30,6 +30,9 @@ body {
     }
 }
 
+  h1 {
+color: black;
+  }
 </style>
     <div id="fade-container">
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -54,15 +57,16 @@ body {
 
 
       <script>
-        var myId;
 
         if (localStorage.getItem('islogedd')) {
-    myId = localStorage.getItem('islogedd')
+     var myId = localStorage.getItem('islogedd')
+        document.getElementById("myId").innerHTML = 'Howdy ' + myId + '?';
        } else {
     window.location.href = "/./";
        }
 
       </script>
-      <center><h1>Good afternoon ${myId}</h1></center>
+      <h1 id="myId">Howdy?</h1>
+      <br>
 <button onclick="logout()">Log out</button>
     </div>
