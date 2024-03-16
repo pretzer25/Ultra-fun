@@ -103,7 +103,7 @@ function myFunction_reload() {
 }
 
 function successall() {
-  localStorage.setItem('islogeddd', 'yes');
+  localStorage.setItem('islogeddd', user_email);
   window.location.href = "/./welcome.html";
 }
 
