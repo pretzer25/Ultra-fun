@@ -51,6 +51,18 @@ body {
   firebase.initializeApp(config);
 </script>
 <script src="index.js"></script>
-      <center><h1>Good afternoon</h1></center>
+
+
+      <script>
+        var myId;
+
+        if (localStorage.getItem('islogedd')) {
+    myId = localStorage.getItem('islogedd')
+       } else {
+    window.location.href = "/./";
+       }
+
+      </script>
+      <center><h1>Good afternoon ${myId}</h1></center>
 <button onclick="logout()">Log out</button>
     </div>
