@@ -104,13 +104,13 @@ function myFunction_reload() {
 
 function successall() {
   localStorage.setItem('islogeddd', 'yes');
-  window.location.href = "/./";
+  window.location.href = "/./welcome.html";
 }
 
 function islogeddd() {
   const islogedddd = localStorage.getItem('islogeddd');
   if (islogedddd === "yes") {
-    window.location.href = "/./";
+    window.location.href = "/./welcome.html";
   }
 }
 
