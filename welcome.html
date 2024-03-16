@@ -60,13 +60,12 @@ color: black;
 
         if (localStorage.getItem('islogedd')) {
      var myId = localStorage.getItem('islogedd')
-        document.getElementById("myId").innerHTML = 'Howdy ' + myId + '?';
        } else {
     window.location.href = "/./";
        }
 
       </script>
-      <h1><span id="myId"></span></h1>
+<h1>Howdy <i>${myId}</i>?</h1>
       <br>
 <button onclick="logout()">Log out</button>
     </div>
