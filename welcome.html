@@ -1,4 +1,37 @@
 <h1>WELCOME!!!!!</h1>
+<style>
+  /* styles.css */
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Hide scrollbars during animation */
+}
+
+#fade-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: black; /* Initial black background */
+    color: white; /* Text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Start with 0 opacity */
+    animation: fadein 2s ease forwards; /* Animation duration: 2 seconds */
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+</style>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js" integrity="sha384-pjaaA8dDz/5BgdFUPX6M/9SUZv4d12SUPF0axWc+VRZkx5xU3daN+lYb49+Ax+Tl" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
