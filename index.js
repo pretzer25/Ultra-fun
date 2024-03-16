@@ -101,3 +101,17 @@ function send_verification(){
 function myFunction_reload() {
     location.reload();
 }
+
+function successall() {
+  localStorage.setItem('islogeddd', 'yes');
+  window.location.href = "/./";
+}
+
+function islogeddd() {
+  const islogedddd = localStorage.getItem('islogeddd');
+  if (islogedddd === "yes") {
+    window.location.href = "/./";
+  }
+}
+
+islogeddd()
