@@ -113,5 +113,3 @@ function islogeddd() {
     window.location.href = "/./welcome.html";
   }
 }
-
-islogeddd()
